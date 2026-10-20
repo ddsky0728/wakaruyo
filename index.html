@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index">
+<title>WakaruYo — Privacy Policy</title>
+<style>
+:root {
+  --ground: #f6f3ee; --surface: #fffdf9; --ink: #2b2621; --ink-2: #5d554c; --rule: #e3dcd2;
+  --accent: #8a6a2e; --accent-ink: #6f5321; --focus: #b58a3c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #1c1916; --surface: #24201c; --ink: #ece6dd; --ink-2: #b5ab9e; --rule: #3a332c;
+    --accent: #d2b06a; --accent-ink: #e2c587; --focus: #d2b06a;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo",
+        "Noto Sans JP", "Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(en) body, body:lang(en) { line-height: 1.65; }
+a { color: var(--accent-ink); text-underline-offset: 0.18em; }
+a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
+header.bar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px;
+  max-width: 760px; margin: 0 auto; padding: 18px 16px 10px;
+}
+.brand { font-family: ui-serif, "New York", Georgia, "Times New Roman", serif; font-size: 22px;
+         letter-spacing: 0.01em; color: var(--ink); text-decoration: none; }
+nav.langs { display: flex; gap: 4px; font-size: 14px; }
+nav.langs a { padding: 4px 10px; border-radius: 999px; text-decoration: none; color: var(--ink-2); }
+nav.langs a[aria-current="page"] { background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule); }
+main { max-width: 760px; margin: 0 auto; padding: 8px 16px 64px; }
+article { max-width: 68ch; }
+h1 { font-size: 30px; line-height: 1.3; margin: 18px 0 6px; text-wrap: balance; }
+h2 { font-size: 21px; line-height: 1.4; margin: 40px 0 8px; padding-top: 18px; border-top: 1px solid var(--rule); text-wrap: balance; }
+h3 { font-size: 17px; line-height: 1.5; margin: 26px 0 6px; color: var(--accent-ink); }
+p, ul { margin: 0 0 14px; }
+ul { padding-left: 1.3em; }
+li { margin: 4px 0; }
+li::marker { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 24px 0; }
+code { font: 0.92em ui-monospace, Menlo, monospace; }
+.meta { color: var(--ink-2); font-size: 15px; }
+.choices { display: grid; gap: 10px; max-width: 420px; margin: 24px 0; }
+.choices a { display: block; padding: 14px 18px; border-radius: 14px; background: var(--surface);
+             box-shadow: inset 0 0 0 1px var(--rule); text-decoration: none; color: var(--ink); font-size: 17px; }
+.choices a small { display: block; color: var(--ink-2); font-size: 13px; }
+section.lang { padding: 6px 0 18px; }
+section.lang + section.lang { border-top: 1px solid var(--rule); }
+.mail { font-size: 18px; word-break: break-all; }
+.note { color: var(--ink-2); font-size: 14px; }
+.preview { background: #f3d9a4; color: #3a2a08; padding: 8px 16px; text-align: center; font-size: 14px; }
+footer { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; color: var(--ink-2); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header class="bar">
+<a class="brand" href="../index.html">WakaruYo</a>
+<nav class="langs" aria-label="Language"><a href="ko.html" hreflang="ko">한국어</a><a href="ja.html" hreflang="ja">日本語</a><a href="en.html" hreflang="en" aria-current="page">English</a></nav>
+</header>
+<main>
+<h1>Privacy Policy</h1>
+<div class="choices"><a href="ko.html" hreflang="ko" lang="ko">개인정보처리방침<small>한국어</small></a><a href="ja.html" hreflang="ja" lang="ja">プライバシーポリシー<small>日本語</small></a><a href="en.html" hreflang="en" lang="en">Privacy Policy<small>English</small></a></div>
+<script>(function(){if(location.search.indexOf('choose')>=0)return;var l=(navigator.languages&&navigator.languages[0]||navigator.language||'en').toLowerCase();location.replace(l.indexOf('ko')===0?'ko.html':l.indexOf('ja')===0?'ja.html':'en.html');})();</script>
+</main>
+<footer>WakaruYo · <a href="../privacy/">Privacy Policy</a> · <a href="../support/">Support</a></footer>
+</body>
+</html>
